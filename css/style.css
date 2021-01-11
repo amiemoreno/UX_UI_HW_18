@@ -1,9 +1,9 @@
-.inline-block {
+nav {
     display: inline;
     vertical-align: top;
     font-size: 30px;
 }
-li{
+li {
     display: inline;
     padding-right: 50px;
 }
@@ -22,9 +22,7 @@ header h1 {
     margin-bottom: 0px;
 }
 ul {
-    /* width: 50%;
-    margin-left: auto; */
-    font: normal normal normal 35px/43px Montserrat;
+    font: normal normal normal 20px/43px Montserrat;
     margin-top: 2px;
 }
 .heroImg {
@@ -38,6 +36,9 @@ ul {
 footer {
     padding-left: 10px;
     padding-right: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 footer h1 {
     text-align: center;
@@ -60,6 +61,7 @@ width: 100%;
 }
 body {
     margin: 0px;
+    font: normal normal normal 16px/24px Montserrat;
 }
 .designer {
 text-align: left;
@@ -69,13 +71,99 @@ width: 532px;
 margin-left: 10%;
 padding-top: 170px;
 }
+
 .logo {
 width:900px;
 }
-/* button {
-width: 230px;
-height: 50px;
-background: #000000;
-border: 1px solid #000000;
-opacity: 1;
-} */
+
+.grid {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 36px;
+}
+
+.project-btn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font: inherit;
+}
+
+.project-img {
+    max-width: 50%;
+}
+
+.card-bg {
+    background: #F5F5EF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-transform: uppercase;
+    font: normal normal normal 24px/35px Montserrat;
+}
+
+.project-desc {
+    padding: 0 48px;
+    text-align: center;
+    text-justify: distribute;
+}
+
+.about {
+    display:flex;
+    background: #F5F5EF;
+    padding: 0 64px;
+}
+
+.about-text {
+    height: 100%;
+    margin: auto;
+    padding-right: 48px;
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    width: 100px;
+  margin-left: 0;
+}
+.process {
+    padding-top: 32px;
+}
+
+footer ul.icons {
+    display: flex; 
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+footer li {
+   padding: 0;
+}
+
+footer img {
+    width: 50px;
+    
+}
+
+section h1 {
+    padding-left: 64px;
+}
