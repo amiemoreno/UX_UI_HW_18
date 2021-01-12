@@ -167,3 +167,16 @@ footer img {
 section h1 {
     padding-left: 64px;
 }
+
+a {
+ text-decoration: none;
+ color: black;
+}
+
+a:hover {
+ font-weight: 600;
+}
+
+nav h1 a:hover {
+    font-weight: 900;
+}
